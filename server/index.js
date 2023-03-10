@@ -3,6 +3,7 @@ const express = require('express')
 const models = require('./models/models')
 const sequelize = require('./db')
 const cors = require('cors')
+const fileUpload = require('express-fileupload')
 const router = require('./routes/index')
 const errorHandler = require('./middleware/ErrorHandlingMiddleware')
 
@@ -12,6 +13,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(fileUpload({ }))
 app.use('/api', router)
 
 //Middleware обработки ошибок
