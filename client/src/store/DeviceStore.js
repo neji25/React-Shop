@@ -1,4 +1,5 @@
 import {makeAutoObservable} from "mobx";
+import phone from '../assets/phone.png'
 
 export default class DeviceStore {
     constructor() {
@@ -16,11 +17,11 @@ export default class DeviceStore {
 
         ]
         this._devices = [
-            {id: 1, name: "Iphone 12 pro", price: 25000, raiting: 5, img: "https://cdnb.artstation.com/p/marketplace/presentation_assets/001/039/809/large/file.jpg?1625573132"},
-            {id: 2, name: "Iphone 12 pro", price: 25000, raiting: 5, img: "https://cdnb.artstation.com/p/marketplace/presentation_assets/001/039/809/large/file.jpg?1625573132"},
-            {id: 3, name: "Iphone 12 pro", price: 25000, raiting: 5, img: "https://cdnb.artstation.com/p/marketplace/presentation_assets/001/039/809/large/file.jpg?1625573132"},
-            {id: 4, name: "Iphone 12 pro", price: 25000, raiting: 5, img: "https://cdnb.artstation.com/p/marketplace/presentation_assets/001/039/809/large/file.jpg?1625573132"},
-            {id: 5, name: "Iphone 12 pro", price: 25000, raiting: 5, img: "https://cdnb.artstation.com/p/marketplace/presentation_assets/001/039/809/large/file.jpg?1625573132"},
+            {id: 1, name: "Iphone 12 pro", price: 25000, raiting: 5, img: phone},
+            {id: 2, name: "Iphone 12 pro", price: 25000, raiting: 5, img: phone},
+            {id: 3, name: "Iphone 12 pro", price: 25000, raiting: 5, img: phone},
+            {id: 4, name: "Iphone 12 pro", price: 25000, raiting: 5, img: phone},
+            {id: 5, name: "Iphone 12 pro", price: 25000, raiting: 5, img: phone},
         ]
         this._selectedType = {}
         this._selectedBrand = {}
